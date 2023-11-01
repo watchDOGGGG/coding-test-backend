@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install && npm run build:compile && npm start",
+    "build": "npm install && npm run test && npm run build:compile && npm start",
     "build:clean": "npm run clean",
     "build:compile": "tsc",
     "dev": "nodemon --exec ts-node src/server.ts",
     "start": "node build/src/server.js",
-    "test": "jest --watch --runInBand"
+    "test": "jest --watch ----watchAll --runInBand"
   },
   "keywords": [],
   "author": "",
